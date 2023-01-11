@@ -1,0 +1,3 @@
+ship vs ship collision - ship strength based upon speed?
+bullet life (important!)
+bullet strength. EG being hit by a bullet should be less problematic than being hit by a ship :/
