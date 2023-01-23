@@ -1,3 +1,7 @@
+# This is the game client. It is mostly responsible for rendering game objects and collecting user input to send to the authoritative game server.
+
+### To start this service locally: `npm start`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

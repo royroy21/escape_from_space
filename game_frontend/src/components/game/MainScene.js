@@ -4,6 +4,7 @@ import Phaser from "phaser";
 import Bullet from "./Bullet";
 import cursorUpdates from "./Cursor";
 import {computeProjectileHit, createShip} from "./Ship";
+import {io} from "socket.io-client";
 
 // TODO - this should come from User via backend
 const defaultShipConfig = {
@@ -45,6 +46,8 @@ class MainScene extends Phaser.Scene {
   }
 
   create() {
+    this.socket = io.connect("http://localhost:8081");
+    // this.socket = io("localhost:8081");
     this.bg = this.add.tileSprite(
       400,
       300,
